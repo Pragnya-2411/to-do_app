@@ -22,14 +22,15 @@ Visit http://localhost:5000 to use the app!
 
 ## 📁 Project Structure
 
-to-do_app/
-├── app.py
-├── templates/
-│   └── index.html
-├── static/
-│   └── style.css
-├── requirements.txt
-└── Dockerfile
+to-do_app/  
+├── app.py  
+├── templates/  
+│   └── index.html  
+├── static/  
+│   └── style.css  
+├── requirements.txt  
+├── Dockerfile  
+└── README.md
 
 ## 📦 Tech Stack
 - Python + Flask
