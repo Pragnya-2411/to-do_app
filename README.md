@@ -37,3 +37,6 @@ to-do_app/
 - HTML + CSS
 - Docker
 - Google Material Icons
+
+## Screenshot
+[!Preview](To-Do_app.png)
