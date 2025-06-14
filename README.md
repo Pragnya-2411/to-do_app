@@ -9,15 +9,15 @@ A simple and clean to-do list web app built using Flask (Python), styled with CS
 - Fully Dockerized for consistent deployment
 
 ## 🚀 Getting Started
-1. Clone the Repository
-git clone https://github.com/your-username/to-do_app.git
+1. Clone the Repository  
+git clone https://github.com/your-username/to-do_app.git  
 cd to-do_app
 
-2. Build the Docker Image
+2. Build the Docker Image  
 docker build -t todo-flask-app .
 
-3. Run the App in Docker
-docker run -d -p 5000:5000 todo-flask-app
+3. Run the App in Docker  
+docker run -d -p 5000:5000 todo-flask-app  
 Visit http://localhost:5000 to use the app!
 
 ## 📁 Project Structure
