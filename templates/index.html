@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<style>
+  .material-symbols-outlined {
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .material-symbols-outlined:hover {
+    color: #d33;
+  }
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <form method="POST">
+      <input type="text" name="task" placeholder="Add a new task..." required>
+      <button type="submit">Add</button>
+    </form>
+    <ul>
+      {% for task in tasks %}
+        <li>
+          {{ task.text }}
+          <form method="POST" action="{{ url_for('delete', task_id=task.id) }}" style="display:inline;">
+            <button type="submit" class="delete-btn">
+              <span class="material-symbols-outlined">delete</span>
+            </button>
+          </form>
+        </li>
+      {% else %}
+        <li>No tasks yet!</li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>

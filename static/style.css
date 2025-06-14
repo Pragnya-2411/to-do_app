@@ -1,0 +1,106 @@
+/* Reset and base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef0ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main card */
+.container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    width: 350px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header bar */
+.header {
+    background-color: #b28dfc;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin: -30px -40px 20px;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+    color: #444;
+    font-size: 16px;
+}
+
+.task-text {
+    display: flex;
+    align-items: center;
+}
+
+.task-text input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #b28dfc;
+}
+
+/* Delete icon */
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-btn:hover {
+    color: #d33;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Add Task button */
+button[type="submit"] {
+    background-color: #b28dfc;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #a07de0;
+}
